@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Great coffee with a conscience
-image: /img/pexels-photo-1308624.jpeg
+image: /img/art-black-background-blur-1040499.jpg
 heading: React Notes
 subheading: Understanding the language inside out
 mainpitch:
