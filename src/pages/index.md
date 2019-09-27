@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-image: /img/flavor_wheel.jpg
+title: React Notes
+image: /img/art-black-background-blur-1040499.jpg
 heading: React Notes
-subheading: Understanding the language inside out
+subheading: Sharing of Ideas on ReactJS and React Native.
 mainpitch:
   title: Why ReactNotes?
   description: >
