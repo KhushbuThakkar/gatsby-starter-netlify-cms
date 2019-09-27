@@ -14,23 +14,23 @@ class BlogRoll extends React.Component {
           posts.map(({ node: post }) => (
             <div className="is-parent column is-12" key={post.id}>
               <article
-                className={`blog-list-item tile is-child box notification ${
+                className={`blog-list-item tile is-child box ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
                 }`}
               >
                 <header>
-                  {post.frontmatter.featuredimage ? (
+                  {/* {post.frontmatter.featuredimage ? (
                     <div className="featured-thumbnail">
                       <PreviewCompatibleImage
                         imageInfo={{
-                          image: post.frontmatter.featuredimage,
+                          // image: post.frontmatter.featuredimage,
                           alt: `featured image thumbnail for post ${
                             post.title
                           }`,
                         }}
                       />
                     </div>
-                  ) : null}
+                  ) : null} */}
                   <p className="post-meta">
                     <Link
                       className="title has-text-primary is-size-4"
