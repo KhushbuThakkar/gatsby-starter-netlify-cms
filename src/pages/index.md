@@ -5,7 +5,7 @@ image: /img/art-black-background-blur-1040499.jpg
 heading: React Notes
 subheading: Sharing of Ideas on ReactJS and React Native.
 mainpitch:
-  title: Why ReactNotes?
+  title: ReactNotes
   description: >
     Kaldi is the coffee store for everyone who believes that great coffee
     shouldn't just taste good, it should do good too. We source all of our beans
