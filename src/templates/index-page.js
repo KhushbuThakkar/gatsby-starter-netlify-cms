@@ -16,17 +16,8 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
-      }}
-    >
-      <div
+    
+    {/* <div
         style={{
           display: 'flex',
           height: '150px',
@@ -62,8 +53,8 @@ export const IndexPageTemplate = ({
         >
           {subheading}
         </h3>
-      </div>
-    </div>
+      </div> */}
+    
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
@@ -74,29 +65,29 @@ export const IndexPageTemplate = ({
                   <div className="tile">
                     <h1 className="title">{mainpitch.title}</h1>
                   </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
+                  {/* <div className="tile">
+                    <p className="subtitle">{mainpitch.description}</p>
+                  </div> */}
                 </div>
-                <div className="columns">
+                {/* <div className="columns">
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
                       {heading}
                     </h3>
                     <p>{description}</p>
                   </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
+                </div> */}
+                {/* <Features gridItems={intro.blurbs} /> */}
+                {/* <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
                       See all products
                     </Link>
                   </div>
-                </div>
+                </div> */}
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
+                    Latest
                   </h3>
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
