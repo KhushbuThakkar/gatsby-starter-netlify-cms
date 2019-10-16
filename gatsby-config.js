@@ -1,10 +1,9 @@
-var proxy = require('http-proxy-middleware')
+var proxy = require('http-proxy-middleware');
 
 module.exports = {
   siteMetadata: {
     title: 'React Notes',
-    description:
-      'To share the notes of react developer.',
+    description: 'To share the notes of react developer.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -87,6 +86,6 @@ module.exports = {
           '/.netlify/functions/': '',
         },
       })
-    )
+    );
   },
-}
+};

@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link, graphql } from 'gatsby';
 
-import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+import Layout from '../components/Layout';
+import Features from '../components/Features';
+import BlogRoll from '../components/BlogRoll';
 
 export const IndexPageTemplate = ({
   image,
@@ -16,7 +16,6 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    
     {/* <div
         style={{
           display: 'flex',
@@ -54,7 +53,7 @@ export const IndexPageTemplate = ({
           {subheading}
         </h3>
       </div> */}
-    
+
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
@@ -86,7 +85,6 @@ export const IndexPageTemplate = ({
                   </div>
                 </div> */}
                 <div className="column is-12">
-                  
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/blog">
@@ -101,7 +99,7 @@ export const IndexPageTemplate = ({
       </div>
     </section>
   </div>
-)
+);
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -113,10 +111,10 @@ IndexPageTemplate.propTypes = {
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
-}
+};
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
@@ -130,8 +128,8 @@ const IndexPage = ({ data }) => {
         intro={frontmatter.intro}
       />
     </Layout>
-  )
-}
+  );
+};
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
@@ -139,9 +137,9 @@ IndexPage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
-}
+};
 
-export default IndexPage
+export default IndexPage;
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
@@ -179,4 +177,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
