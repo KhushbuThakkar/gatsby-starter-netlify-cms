@@ -35,17 +35,31 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent is-fixed  "
+        className="navbar is-transparent"
         role="navigation"
         aria-label="main navigation"
+        style={{ background: 'transparent' }}
       >
-        <div class="columns navbar-full">
-          <div class="column is-10 is-offset-1">
+        <div className="nav-container navbar-brand">
+          <a className="navbar-item" href="/">
+            React Notes
+          </a>
+          <div
+            className="navbar-burger burger"
+            data-target="navbarExampleTransparentExample"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        {/* <div className="columns navbar-full">
+          <div className="column is-10 is-offset-1">
             <a className="navbar-item" href="#">
               React Notes
             </a>
           </div>
-        </div>
+        </div> */}
       </nav>
     );
   }

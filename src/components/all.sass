@@ -10,6 +10,14 @@ $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #00D1B2
 
+// index
+.WaveWrapper
+  height: 100px
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: -1
 .content .taglist
   list-style: none
   margin-bottom: 0
@@ -67,6 +75,12 @@ $black: #00D1B2
 
 .margin-top-0
   margin-top: 0 !important
+
+.nav-container
+  padding: 0 1.5rem
+.navbar.is-transparent.custom-nav
+  background-color: unset
+  background: transparent
 .navbar .navbar-full
   width: 100%
 .navbar-item .icon
@@ -115,6 +129,9 @@ $menu-label-color: $white-ter
 
 // blog roll
 .blog-list-item
+  box-shadow: none
+.blog-list-item.box
+  border: none
   box-shadow: none
 // .blog-list-item.is-featured
 //   background-color: #d6400033
