@@ -47,14 +47,14 @@ const Navbar = class extends React.Component {
           <div className="sub-navbar">
             <span>Developer's handbook</span>
           </div>
-          <div
+          {/* <div
             className="navbar-burger burger"
             data-target="navbarExampleTransparentExample"
           >
+            <span>New</span>
             <span></span>
             <span></span>
-            <span></span>
-          </div>
+          </div> */}
         </div>
         {/* <div className="columns navbar-full">
           <div className="column is-10 is-offset-1">

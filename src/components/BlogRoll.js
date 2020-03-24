@@ -33,7 +33,7 @@ class BlogRoll extends React.Component {
                   ) : null} */}
                   <p className="post-meta">
                     <Link
-                      className="title blogs-title  is-size-3"
+                      className="blogs-title  is-size-3"
                       to={post.fields.slug}
                     >
                       {post.frontmatter.title}

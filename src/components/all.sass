@@ -12,6 +12,14 @@ $body-color: #333
 $black: #00D1B2
 $navbar-item-hover-color: #00D1B2
 
+
+body::selection 
+  background: $primary; 
+
+
+body::-moz-selection 
+  background: $primary;
+
 // index
 .WaveWrapper
   height: 100px
@@ -34,6 +42,7 @@ $navbar-item-hover-color: #00D1B2
     padding: 0 2rem 1rem 0
     margin-bottom: 1.5rem
     margin-top: 0
+    
 
 // Helper Classes
 .full-width-image-container
@@ -68,10 +77,10 @@ $navbar-item-hover-color: #00D1B2
   border-radius: .25rem
   text-decoration: none
   font-weight: 700
-  color: #CC3700
-  text-align: center
-  -webkit-box-shadow: inset 0 0 0 2px #CC3700
-  box-shadow: inset 0 0 0 2px #f40
+  color: $primary
+  text-align: center#050302
+  -webkit-box-shadow: inset 0 0 0 2px $primary
+  box-shadow: inset 0 0 0 2px $primary
   -webkit-transition: all .15s ease
   transition: all .15s ease
 
@@ -117,8 +126,13 @@ $navbar-item-hover-color: #00D1B2
 .nav-header
   width: 100%
 footer.footer
-  padding: 3rem 0rem 0rem
+  padding: 0rem 0rem 0rem
   // background-color: transparent
+
+.footer-main-header
+  font-weight: bolder;
+  font-family: 'Dancing Script', cursive;
+
 
 //Menu overrides
 // $menu-item-color: $white-ter
@@ -150,6 +164,9 @@ $menu-label-color: $white-ter
 // blog roll
 .blogs-title
   font-family: 'Dancing Script', cursive;
+  color: $primary;
+  font-weight: 600;
+  line-height: 1.125;
 .blog-list-item
   box-shadow: none
 .blog-list-item.box
