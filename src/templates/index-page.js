@@ -17,7 +17,7 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <Parallax />
+    {/* <Parallax /> */}
     {/* <div
         style={{
           display: 'flex',

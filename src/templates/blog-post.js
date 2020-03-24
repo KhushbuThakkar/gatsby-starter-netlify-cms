@@ -4,6 +4,7 @@ import { kebabCase } from 'lodash';
 import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
 import Layout from '../components/Layout';
+// import './css/blog-post.sass';
 import Content, { HTMLContent } from '../components/Content';
 
 export const BlogPostTemplate = ({
@@ -17,16 +18,25 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="section">
+    <section className="section is-small full-height">
       {helmet || ''}
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+            {/* <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
-            </h1>
-            <p>{description}</p>
+            </h1> */}
+            {/* <p>{description}</p> */}
+            <div className="blog-title   is-size-3 title">{title}</div>
             <PostContent content={content} />
+
+            {/* <div className="paper">
+              <div className="pattern">
+                <div className="title">{title}</div>
+                <div className="content">{description}</div>
+              </div>
+            </div> */}
+
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>

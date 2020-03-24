@@ -35,15 +35,18 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="navbar navbar-brand is-fixed-top"
         role="navigation"
         aria-label="main navigation"
-        style={{ background: 'transparent' }}
+        // style={{ background: 'transparent' }}
       >
         <div className="nav-container navbar-brand">
-          <a className="navbar-item" href="/">
+          <a className="navbar-item main" href="/">
             React Notes
           </a>
+          <div className="sub-navbar">
+            <span>Developer's handbook</span>
+          </div>
           <div
             className="navbar-burger burger"
             data-target="navbarExampleTransparentExample"
