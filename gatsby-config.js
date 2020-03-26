@@ -2,12 +2,14 @@ var proxy = require('http-proxy-middleware');
 
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://www.reactnotes.com/`,
     title: 'React Notes',
     description: 'To share the notes of react developer.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    `gatsby-plugin-sitemap`,
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
